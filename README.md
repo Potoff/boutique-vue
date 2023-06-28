@@ -1,6 +1,6 @@
 # boutique
 
-This template should help get you started developing with Vue 3 in Vite.
+Front end project for simple boutique using vue 3 with api composition.
 
 ## Recommended IDE Setup
 

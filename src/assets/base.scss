@@ -1,7 +1,107 @@
 :root {
+  --primary-1 : #2ecc71;
+  --primary-2 : #27ae60;
+  --danger-1:#e74c3c;
+  --danger-2:#c0392b;
+  --sucess-1: #1abc9c;
+  --sucess-2:#16a085;
+  --text-color: #444;  
+  --text-primary-color: #ffffff;
+  --white: #fff;
+  --gray-1:#f6f6f6;
+  --gray-2: #ddd;
+
   --font-family: 'Roboto', sans-serif;
+
+  --border: 1px solid var(--gray-2);
+  --border-radius: 4px;
+
+}
+
+// restet
+
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
 }
 
 body {
   font-family: var(--font-family);
+  padding: 0;
+  margin: 0;
+  color: var(--text-color);
+  background-color: var(--gray-1);
+  min-height: 100vh;
+}
+
+// flex
+
+.d-flex {
+  display: flex;
+}
+
+.flex-row{
+  flex-direction: row;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+.justify-content{
+  justify-content: center;
+}
+
+.align-items {
+  align-items: center;
+}
+
+.flex-fill {
+  flex: 1 1 auto;
+}
+
+// Padding
+
+.p-10 {
+  padding: 10px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.p-30 {
+  padding: 30px;
+}
+
+// Margin
+
+.m-10 {
+  margin: 10px;
+}
+
+.m-20 {
+  margin: 20px;
+}
+
+.m-30 {
+  margin: 30px;
 }
