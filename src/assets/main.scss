@@ -1,2 +1,26 @@
 @import './base.scss';
 @import './debug.scss';
+
+.app-container {
+  display: grid;
+  grid-template-areas: "header header" "shop cart" "footer footer";
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 48px auto 48px;
+  min-height: 100vh;
+}
+
+.header {
+  grid-area: header;
+}
+
+.shop {
+  grid-area: shop;
+}
+
+.cart {
+  grid-area: cart;
+}
+
+.footer {
+  grid-area: footer;
+}
