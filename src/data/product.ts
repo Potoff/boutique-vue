@@ -47,5 +47,12 @@ export default [
         title: "tacos",
         price: 8,
         description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+        id: 8,
+        image: "src/assets/images/bowl.png",
+        title: "bowl",
+        price: 12,
+        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
     }
 ]
