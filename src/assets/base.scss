@@ -143,6 +143,14 @@ body {
   }
 }
 
+.btn-success {
+  background-color: var(--sucess-1);
+  color: var(--text-primary-color);
+  &:hover {
+    background-color: var(--sucess-2);
+  }
+}
+
 .btn-danger {
   background-color: var(--danger-1);
   color: var(--text-primary-color);

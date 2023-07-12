@@ -5,7 +5,7 @@ import Cart from "./components/Cart/Cart.vue";
 import TheFooter from "./components/Footer.vue";
 import data from "./data/product";
 
-import { reactive } from "vue";
+import { computed, reactive } from "vue";
 import type { ProductCartInterface, ProductInterface } from "@/interfaces";
 
 const state = reactive<{
@@ -39,17 +39,26 @@ function removeProductFromCart(productId: number): void {
     }
 }
 
+const cartEmpty = computed(() => {
+    return state.cart.length === 0;
+})
+
 </script>
 
 <template>
-    <div class="app-container">
+    <div class="app-container" :class="{
+        gridEmpty: cartEmpty
+    }">
         <TheHeader class="header" />
         <Shop :products="state.products" @add-product-to-cart="addProductToCart" class="shop" />
-        <Cart :cart="state.cart" class="cart" @remove-product-from-cart="removeProductFromCart" />
+        <Cart :cart="state.cart" class="cart" @remove-product-from-cart="removeProductFromCart" v-if="!cartEmpty"/>
         <TheFooter class="footer" />
     </div>
 </template>
 
 <style lang="scss">
 @import "./assets/main.scss";
+
+
+
 </style>

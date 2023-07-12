@@ -9,6 +9,11 @@
   min-height: 100vh;
 }
 
+.gridEmpty {
+  grid-template-areas: "header" "shop" "footer";
+  grid-template-columns: 100%;
+}
+
 .header {
   grid-area: header;
 }
