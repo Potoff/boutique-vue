@@ -1,3 +1,5 @@
+import type { ProductInterface } from "@/interfaces";
+
 export default [
     {
         id: 1,
@@ -5,6 +7,7 @@ export default [
         title: "burger",
         price: 15,
         description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        category: "junk",
     },
     {
         id: 2,
@@ -12,6 +15,7 @@ export default [
         title: "pâtes carbo",
         price: 10,
         description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        category: "italian",
     },
     {
         id: 3,
@@ -19,6 +23,7 @@ export default [
         title: "durum",
         price: 8,
         description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        category: "junk",
     },
     {
         id: 4,
@@ -26,6 +31,7 @@ export default [
         title: "pita",
         price: 5,
         description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        category: "junk",
     },
     {
         id: 5,
@@ -33,6 +39,7 @@ export default [
         title: "pizza",
         price: 12,
         description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        category: "italian",
     },
     {
         id: 6,
@@ -40,6 +47,7 @@ export default [
         title: "poutine",
         price: 10,
         description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        category: "junk",
     },
     {
         id: 7,
@@ -47,6 +55,7 @@ export default [
         title: "tacos",
         price: 8,
         description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        category: "junk",
     },
     {
         id: 8,
@@ -54,5 +63,6 @@ export default [
         title: "bowl",
         price: 12,
         description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        category: "healthy",
     }
-]
+] as ProductInterface[];
