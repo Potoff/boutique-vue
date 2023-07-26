@@ -16,7 +16,7 @@ const state = reactive<{
 }>({
     products: data,
     cart: [],
-    filters: {...DEFAULT_FILTERS}
+    filters: { ...DEFAULT_FILTERS }
 });
 
 function addProductToCart(productId: number): void {
@@ -50,7 +50,7 @@ function updateFilter(filterUpdate: FilterUpdate) {
     } else if (filterUpdate.category) {
         state.filters.category = filterUpdate.category;
     } else {
-        state.filters = {...DEFAULT_FILTERS};
+        state.filters = { ...DEFAULT_FILTERS };
     }
 }
 
@@ -81,7 +81,7 @@ const filteredProducts = computed(() => {
     }">
         <TheHeader class="header" />
         <Shop :products="filteredProducts" @add-product-to-cart="addProductToCart" @update-filter="updateFilter"
-            class="shop" />
+            class="shop" :filters="state.filters" />
         <Cart :cart="state.cart" class="cart" @remove-product-from-cart="removeProductFromCart" v-if="!cartEmpty" />
         <TheFooter class="footer" />
     </div>
