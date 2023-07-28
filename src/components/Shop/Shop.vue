@@ -17,7 +17,7 @@ const emit = defineEmits<{
 
 <template>
     <div class="d-flex flex-row">
-        <ShopFilters :filters="filters" @update-filter="emit('updateFilter', $event)" class="shop-filter" />
+        <ShopFilters :filters="filters" @update-filter="emit('updateFilter', $event)" class="shop-filter" :nbr-of-products="products.length" />
         <ShopProductList class="flex-fill" @add-product-to-cart="emit('addProductToCart', $event)" :products="products" />
 
     </div>
